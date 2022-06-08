@@ -16,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "server":"json-server --watch ./src/data/books,json --path 3066 ",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

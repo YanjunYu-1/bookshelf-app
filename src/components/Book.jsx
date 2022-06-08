@@ -9,7 +9,7 @@ const Book = () => {
                         {{
                             width: "128px",
                             height: "193px",
-                            backgroundImage: "url('http://books.google.com/books/content?id=H8tNBKmPO5UC&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api')"
+                            backgroundImage: "url('http://books.google.com/books/content?id=GIXhVWC_BMoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api')"
                         }}
 
                     ></div>
