@@ -1,4 +1,5 @@
-const Book = () => {
+const Book = ({imageURL,title,author}) => {
+    // console.log(imageURL,title,author)
     return (
         <li>
             <div className="book">
@@ -9,7 +10,8 @@ const Book = () => {
                         {{
                             width: "128px",
                             height: "193px",
-                            backgroundImage: "url('http://books.google.com/books/content?id=GIXhVWC_BMoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api')"
+                            backgroundImage: 
+                            `url(${imageURL})`
                         }}
 
                     ></div>
@@ -23,8 +25,8 @@ const Book = () => {
                         </select>
                     </div>
                 </div>
-                <div className="book-title">Android Fully Loaded</div>
-                <div className="book-authors">Rob Huddleston</div>
+                <div className="book-title">{title}</div>
+                <div className="book-authors">{author}</div>
             </div>
         </li>
     );
