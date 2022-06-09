@@ -1,5 +1,12 @@
-const Book = ({imageURL,title,author}) => {
+const Book = ({id,imageURL,title,author,handleToggleBook}) => {
     // console.log(imageURL,title,author)
+
+    const handleChange=(event) => {
+        const selectedShelf=event.target.value
+        // console.log(event.target.value)
+        console.log(selectedShelf,id)
+        handleToggleBook(selectedShelf,id)
+    }
     return (
         <li>
             <div className="book">
@@ -16,7 +23,7 @@ const Book = ({imageURL,title,author}) => {
 
                     ></div>
                     <div className="book-shelf-changer">
-                        <select>
+                        <select onChange={handleChange}>
                             <option value="move" disabled="">Move to...</option>
                             <option value="currentlyReading">Currently Reading</option>
                             <option value="wantToRead">Want to Read</option>
