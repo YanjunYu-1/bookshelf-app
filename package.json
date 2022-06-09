@@ -16,7 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "server":"json-server --watch ./src/data/books,json --path 3066 ",
+    "server":"json-server --watch ./src/data/books.json --port 3066 ",
     "dev":"npm run start & npm run server",
     "eject": "react-scripts eject"
   },

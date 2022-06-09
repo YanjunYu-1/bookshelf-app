@@ -4,8 +4,8 @@ const Book = ({id,imageURL,title,author,handleToggleBook}) => {
     const handleChange=(event) => {
         const selectedShelf=event.target.value
         // console.log(event.target.value)
-        console.log(selectedShelf,id)
-        handleToggleBook(selectedShelf,id)
+        // console.log(selectedShelf,id)
+        handleToggleBook(id)
     }
     return (
         <li>
